@@ -1,5 +1,6 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
 }
 
 h1,
@@ -39,6 +40,12 @@ ul {
   list-style: none;
 }
 
+figure {
+  margin: 0;
+}
+
+/* Header section */
+
 .header {
   background-color: #1d242a;
   color: #fff;
@@ -73,6 +80,8 @@ ul {
   background-position-x: right;
   display: flex;
 }
+
+/* Portfolio section */
 
 .portfolio {
   background: #fafafa;
@@ -117,6 +126,58 @@ ul {
 }
 .project-imageContainer {
   width: 500px;
+}
+
+/* Events section */
+.event-list {
+  display: flex;
+}
+
+.event-list-title {
+  margin-left: 20px;
+}
+
+.event {
+  margin: 10px;
+  width: 480px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f4fbff;
+}
+.event img {
+  width: 480px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-detail {
+  margin: 20px 40px;
+  margin-top: -40px;
+  background-color: #fff;
+  position: relative;
+  padding: 20px;
+  text-align: center;
+}
+
+.event-description {
+  text-align: left;
+}
+
+.event-url {
+  border: 1px solid #fccb0b;
+  padding: 5px 20px;
+  text-decoration: none;
+  color: #fccb0b;
+  border-radius: 5px;
+}
+
+/* Contact section */
+.contact {
+  background-color: #aaa;
+  color: #fff;
+  height: 150px;
+  display: flex;
 }
 
 .footer {
