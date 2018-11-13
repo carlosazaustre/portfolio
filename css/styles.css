@@ -1,6 +1,9 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
 }
 
 h1,
@@ -17,7 +20,7 @@ h1 {
   line-height: 1.5em;
   letter-spacing: -.2px;
   color: #fff;
-  margin: 0;
+  margin: 40px;
 }
 
 h1 strong {
@@ -44,6 +47,16 @@ figure {
   margin: 0;
 }
 
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
 /* Header section */
 
 .header {
@@ -51,6 +64,7 @@ figure {
   color: #fff;
   display: flex;
   height: 70px;
+  align-items: center;
   justify-content: space-between;
 }
 .menu {
@@ -62,23 +76,25 @@ figure {
 }
 .header ol li {
   height: inherit;
-  display: flex;
-  align-items: center;
 }
 .header a {
-  display: block;
+  display: flex;
+  align-items: center;
   height: inherit;
   color: #fff;
+  text-decoration: none;
+  padding: 0 10px;
 }
 
 .hero {
   height: 300px;
-  background-image: url('../images/hero.jpg');
   background-color: #1d242a;
-  background-size: 500px 300px;
-  background-repeat: no-repeat;
-  background-position-x: right;
   display: flex;
+  align-items: center;
+  justify-content: inherit;
+}
+.hero-image {
+  object-fit: cover;
 }
 
 /* Portfolio section */
@@ -90,7 +106,7 @@ figure {
 
 .project {
   background-color: #fff;
-  border: 1px solid #dddddd;
+  box-shadow: 2px 2px 20px -7px rgba(0,0,0,0.75);
   border-radius: 10px;
   margin: 10px;
   margin-bottom: 15px;
@@ -131,6 +147,7 @@ figure {
 /* Events section */
 .event-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .event-list-title {
@@ -225,10 +242,16 @@ figure {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* Footer section */
+
 .footer {
   color: white;
   background-color: #1d242a;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 50px;
+}
+.footer a {
+  color: #fff;
 }
