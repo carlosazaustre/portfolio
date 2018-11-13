@@ -7,48 +7,66 @@
   <title>Carlos Azaustre</title>
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
 </head>
 <body>
   <header class="header">
-    <div>
-      <figure class="logo">
-        <img src="images/logo.png" alt="https://carlosazaustre.com Logo">
-      </figure>
-      <nav class="menu">
-        <ol>
-          <li><a class="link" href="#portfolio">Portfolio</a></li>
-          <li><a class="link" href="#events">Experience</a></li>
-          <li><a class="link" href="#contact">We work together?</a></li>
-        </ol>
-      </nav>
-    </div>
+    <figure class="logo">
+      <img src="images/logo.png" alt="https://carlosazaustre.com Logo">
+    </figure>
+    <nav class="menu">
+      <ol>
+        <li><a class="link" href="#portfolio">Portfolio</a></li>
+        <li><a class="link" href="#events">Experience</a></li>
+        <li><a class="link" href="#contact">We work together?</a></li>
+      </ol>
+    </nav>
   </header>
   <section class="hero">
     <h1>Hi! I'm <strong>Carlos Azaustre.</strong><br/>
-      <strong>JavaScript</strong> Developer 
-      and <strong>Frontend</strong> Engineer.
+      <strong>JavaScript</strong> Developer and<br/>
+      <strong>Frontend</strong> Engineer.
     </h1>
     <img src="images/hero.png" width="500" height="300" alt="Cover Image" />
   </section>
   <section id="portfolio" class="portfolio">
     <h2>Portfolio (Featured Projects)</h2>
     <article class="project">
-      <h3 class="project-title">Reactube</h3>
-      <h6 class="project-course">React Native / React.js</h6>
-      <p class="project-date"><small><strong>Date:</strong> September 2018</small></p>
-      <p class="project-url"><small><strong>Try it on:</strong> carlosazaustre.es/reactube</small></p>
-      <p class="project-description"><em>Reactube</em> is a proof of concept using React, Redux and React Native to show the features and performance of this technologies. 
-        From Detail Views to advanced patterns.</p>
+      <div class="project-details">
+        <h3 class="project-title">Reactube</h3>
+        <h6 class="project-course">React.js / Redux</h6>
+        <p class="project-date"><small><strong>Date:</strong> September 2018</small></p>
+        <p class="project-url"><small><strong>Try it on:</strong> carlosazaustre.es/reactube</small></p>
+        <p class="project-description">
+          <em>Reactube</em> is a proof of concept using React, Redux to show the features and performance of this technologies. 
+          From Detail Views to advanced patterns.
+        </p>
+      </div>
       <figure class="project-imageContainer">
-        <img class="project-image" src="images/react-project.png" alt="React and Redux project">
+        <img class="project-image" src="images/project-react.png" alt="React and Redux project">
       </figure>
     </article>
+    <article class="project">
+        <div class="project-details">
+          <h3 class="project-title">Reactflix</h3>
+          <h6 class="project-course">React Native</h6>
+          <p class="project-date"><small><strong>Date:</strong> September 2018</small></p>
+          <p class="project-url"><small><strong>Try it on:</strong> carlosazaustre.es/reactube</small></p>
+          <p class="project-description">
+            <em>Reactflix</em> is a proof of concept using React Native and Redux to show the features and performance of this technologies. 
+            From Detail Views to advanced patterns.
+          </p>
+        </div>
+        <figure class="project-imageContainer">
+          <img class="project-image" src="images/project-react.png" alt="React and Redux project">
+        </figure>
+      </article>
   </section>
   <section id="events">
     <h2>More about my experience</h2>
     <article class="event">
       <figure class="event-imageContainer">
-        <img class="event-image" src="images/platzi-conf.jpg" width="500" alt="">
+        <img class="event-image" src="images/platzi-conf.png" width="500" alt="">
       </figure>
       <h3 class="event-title">PlatziConf Spain 2016</h3>
       <p class="event-description">The biggest event with people who wants to 

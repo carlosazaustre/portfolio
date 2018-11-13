@@ -1,7 +1,89 @@
 body {
-  background: #f7f1e3;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
-header {
-  background: #84817a;
+h1,
+h2,
+h3,
+h4,
+h6 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.5em;
+  letter-spacing: -.2px;
+  color: #fff;
+}
+
+h1 strong {
+  color: #fccb0b;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header {
+  background-color: #1d242a;
+  color: #fff;
+  display: flex;
+  height: 90px;
+  justify-content: space-between;
+}
+.menu {
+  height: inherit;
+}
+.header ol {
+  display: flex;
+  height: inherit;
+}
+.header ol li {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.header a {
+  display: block;
+  height: inherit;
+  color: #fff;
+}
+
+.hero {
+  height: 300px;
+  background-image: url('../images/hero.jpg');
+  background-color: #1d242a;
+  background-size: 500px 300px;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.portfolio {
+  background: #fafafa;
+}
+
+.project {
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 15px;
+  margin-right: 0%;
+  padding: 20px;
+  width: 500px;
+  height: 500px;
+  box-sizing: border-box;
+}
+
+.project-details {
+  width: 500px;
+}
+
+.project-imageContainer {
+  width: 500px;
 }
