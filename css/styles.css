@@ -178,6 +178,51 @@ figure {
   color: #fff;
   height: 150px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  background-size: 25px 25px;
+  margin: 0 10px;
+}
+.social-link.twitter {
+  background-image: url('../images/twitter.svg');
+}
+.social-link.instagram {
+  background-image: url('../images/instagram.svg');
+}
+.social-link.github {
+  background-image: url('../images/github.svg');
+}
+
+.form-email input {
+  border-color: #ddd;
+  border-radius: 5px;
+  border-style: solid;
+  border: 1px;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../images/envelope.svg');
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+.form-email button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.form-email h3 {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .footer {
