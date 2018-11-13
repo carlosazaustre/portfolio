@@ -16,6 +16,7 @@ h1 {
   line-height: 1.5em;
   letter-spacing: -.2px;
   color: #fff;
+  margin: 0;
 }
 
 h1 strong {
@@ -33,7 +34,7 @@ ul {
   background-color: #1d242a;
   color: #fff;
   display: flex;
-  height: 90px;
+  height: 70px;
   justify-content: space-between;
 }
 .menu {
@@ -61,6 +62,7 @@ ul {
   background-size: 500px 300px;
   background-repeat: no-repeat;
   background-position-x: right;
+  display: flex;
 }
 
 .portfolio {
@@ -86,4 +88,12 @@ ul {
 
 .project-imageContainer {
   width: 500px;
+}
+
+.footer {
+  color: white;
+  background-color: #1d242a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
