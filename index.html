@@ -157,5 +157,22 @@
       <div>With ❤︎ from Madrid, Spain</div>
     </div>
   </footer>
+
+  <script>
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.burguer-button');
+
+    function toggleMenu() {
+      menu.classList.toggle('is-active');
+    }
+
+    function hideMenu() {
+      menu.classList.remove('is-active');
+    }
+
+    menu.addEventListener('click', hideMenu);
+    menuBtn.addEventListener('click', toggleMenu);
+
+  </script>
 </body>
 </html>
