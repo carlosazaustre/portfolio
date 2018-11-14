@@ -19,7 +19,7 @@ h1 {
   font-size: 40px;
   line-height: 1.5em;
   letter-spacing: -.2px;
-  color: #fff;
+  color: #00ff00
   margin: 40px;
 }
 
@@ -48,7 +48,8 @@ figure {
 }
 
 .container {
-  width: 1000px;
+  max-width: 1000px;
+  flex: 1;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -66,6 +67,7 @@ figure {
   height: 70px;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .menu {
   height: inherit;
@@ -92,6 +94,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: inherit;
+  flex-wrap: wrap;
 }
 .hero-image {
   object-fit: cover;
@@ -116,6 +119,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project strong {
@@ -197,6 +201,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social-link {
@@ -251,7 +256,40 @@ figure {
   align-items: center;
   justify-content: space-between;
   height: 50px;
+  flex-wrap: wrap;
 }
 .footer a {
   color: #fff;
+}
+
+/* Responsive media queries */
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    height: auto;
+  }
+  .header ol {
+    display: initial;
+  }
+  .header ol li {
+    height: 50px;
+  }
+  .header a {
+    justify-content: center;
+  }
+  .header .logo {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+}
+
+@media screen and (max-width: 320px) {
+  
 }
