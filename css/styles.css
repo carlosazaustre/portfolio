@@ -113,7 +113,6 @@ figure {
   border-radius: 10px;
   margin: 10px;
   margin-bottom: 15px;
-  margin-right: 0%;
   padding: 20px;
   box-sizing: border-box;
   display: flex;
@@ -132,7 +131,7 @@ figure {
 }
 
 .project-details {
-  width: 500px;
+  width: 50%;
 }
 
 .project-course,
@@ -145,7 +144,11 @@ figure {
   font-size: 20px;
 }
 .project-imageContainer {
-  width: 500px;
+  width: 50%;
+}
+
+.project-imageContainer img {
+  max-width: 100%;
 }
 
 /* Events section */
@@ -284,10 +287,45 @@ figure {
   .header .logo {
     text-align: center;
   }
+
+  .project {
+    display: block;
+  }
+  .project-imageContainer {
+    width: auto;
+    text-align: center;
+  }
+  .project-details {
+    width: auto;
+    font-size: 20px;
+  }
+  .project-course,
+  .project-date,
+  .project-url {
+    margin: .3em 0;
+  }
+  .project-title {
+    font-size: 1.5em
+    margin-bottom: .3em;
+  }
+  .project-url {
+    font-size: 1em
+  }
+  .project-course {
+    font-size: 1..7em;
+  }
+  .project-date {
+    font-size: 1em
+  }
+  .project-description {
+    font-size: .8em;   
+  }
 }
 
 @media screen and (max-width: 480px) {
-  
+  .project-details {
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 320px) {
