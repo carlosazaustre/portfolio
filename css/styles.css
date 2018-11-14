@@ -121,6 +121,21 @@ figure {
   height: 100%;
 }
 
+.burguer-button {
+  width: 50px;
+  height: 50px;
+  border-radius:50%;
+  background-color: rgba(0, 0, 0, .75);
+  display: none;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+
 /* Header section */
 
 .header {
@@ -363,6 +378,10 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
+  .burguer-button {
+    display: block;
+  }
+  
   .header {
     display: block;
     height: auto;
@@ -376,9 +395,31 @@ figure {
   }
   .header a {
     justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
+    text-shadow: 1px 1px 1px #666;
   }
   .header .logo {
     text-align: center;
+  }
+
+  .menu {
+    position: fixed;
+    background-color: rgb(252, 203, 11, .85);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+  .menu.is-active {
+    left: 0;
   }
 
   .project {
