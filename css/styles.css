@@ -1,3 +1,48 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?udmfnm');
+  src: url('../fonts/icomoon.eot?udmfnm#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?udmfnm') format('truetype'),
+    url('../fonts/icomoon.woff?udmfnm') format('woff'),
+    url('../fonts/icomoon.svg?udmfnm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play:before {
+  content: "\e912";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-envelope:before {
+  content: "\ea85";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
@@ -232,6 +277,9 @@ figure {
   display: inline-block;
   background-size: 25px 25px;
   margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4em;
 }
 .social-link.twitter {
   background-image: url('../images/twitter.svg');
@@ -280,9 +328,11 @@ figure {
   justify-content: space-between;
   height: 50px;
   flex-wrap: wrap;
+  padding: 0.75em 0;
 }
 .footer a {
   color: #fff;
+  text-decoration: none;
 }
 
 /* Responsive media queries */
