@@ -162,8 +162,8 @@ figure {
 }
 
 .event {
-  margin: 10px;
-  width: 480px;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 10px;
@@ -267,7 +267,7 @@ figure {
 
 /* Responsive media queries */
 @media screen and (max-width: 1024px) {
-  
+ 
 }
 
 @media screen and (max-width: 767px) {
@@ -318,13 +318,26 @@ figure {
     font-size: 1em
   }
   .project-description {
-    font-size: .8em;   
+    font-size: .8em;
+  }
+
+  .event {
+    width: auto;
+    flex-shrink: initial;
+  }
+  .event img {
+    width: 100%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .project-details {
     font-size: 18px;
+  }
+
+  .event-detail {
+    margin: -2em .5em .5em;
+    padding: 1em;
   }
 }
 
