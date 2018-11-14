@@ -90,10 +90,11 @@ figure {
 
 .hero {
   height: 300px;
+  color: #fafafa;
   background-color: #1d242a;
   display: flex;
   align-items: center;
-  justify-content: inherit;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .hero-image {
@@ -167,7 +168,7 @@ figure {
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 10px;
-  background: #f4fbff;
+  background: #fafafa;
 }
 .event img {
   width: 480px;
@@ -242,6 +243,7 @@ figure {
   background: transparent;
   color: #fff;
   padding: 10px 0;
+  border: 1px solid;
   border-radius: 5px;
   width: 100px;
 }
@@ -267,13 +269,36 @@ figure {
 
 /* Responsive media queries */
 @media screen and (max-width: 1024px) {
- 
+  .container {
+    padding: 0 1em;
+  }
+
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em;
+  }
+  .hero-image {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  h1 {
+    font-size: 2em;
+    z-index: 2;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .header {
     display: block;
     height: auto;
+
   }
   .header ol {
     display: initial;
@@ -331,6 +356,14 @@ figure {
 }
 
 @media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.6em;
+    text-shadow: 1px 2px 2px#000;
+  }
+  .hero-image {
+    filter: opacity(80%) blur(1px);
+  }
+
   .project-details {
     font-size: 18px;
   }
@@ -339,8 +372,36 @@ figure {
     margin: -2em .5em .5em;
     padding: 1em;
   }
+
+  .contact {
+    height: auto;
+    padding: 1.5em 0;
+    display: block;
+    text-align: center;
+  }
+  .form-email {
+    flex-direction: column;
+    text-align: center;
+  }
+  .form-email button {
+    margin: 1em auto;
+    font-size: 16px;
+  }
+  .form-email h3 {
+    margin-top: 0;
+  }
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent;
+  }
 }
 
 @media screen and (max-width: 320px) {
-  
+  h1 {
+    font-size: 1.4em;
+  }
+  .hero {
+    padding: 2em 1em;
+  }
 }
