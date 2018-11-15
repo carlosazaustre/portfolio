@@ -363,7 +363,7 @@ figure {
 }
 
 /* Responsive media queries */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .container {
     padding: 0 1em;
   }
@@ -387,6 +387,23 @@ figure {
     font-size: 2em;
     z-index: 2;
   }
+
+  h2 {
+    margin: 0;
+    padding: .75em 0;
+  }
+
+  .portfolio,
+  .contact {
+    padding: 0 0 1em;
+  }
+
+  .event-list-title {
+    margin-left: 0;
+  }
+  .event-list {
+    padding-bottom: 1em;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -397,7 +414,6 @@ figure {
   .header {
     display: block;
     height: auto;
-
   }
   .header ol {
     display: initial;
@@ -434,8 +450,8 @@ figure {
     left: 0;
   }
 
-  .portfolio {
-    padding: 0;
+  h2 {
+    font-size: 1.2em;
   }
 
   .project {
@@ -455,7 +471,7 @@ figure {
     margin: .3em 0;
   }
   .project-title {
-    font-size: 1.5em
+    font-size: 1.5em;
     margin-bottom: .3em;
   }
   .project-url {
@@ -468,7 +484,7 @@ figure {
     font-size: 1em
   }
   .project-description {
-    font-size: .8em;
+    font-size: 1em;
   }
 
   .event {
@@ -519,6 +535,11 @@ figure {
     display: block;
     text-align: center;
     border: 1px solid transparent;
+  }
+
+  .social-link {
+    width: 40px;
+    height: 40px;
   }
 }
 
