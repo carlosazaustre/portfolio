@@ -157,10 +157,12 @@
       <div>With ❤︎ from Madrid, Spain</div>
     </div>
   </footer>
-
+  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
   <script>
+    var $body = document.body;
     var menu = document.querySelector('.menu');
     var menuBtn = document.querySelector('.burguer-button');
+    var hammer = new Hammer($body);
 
     function toggleMenu() {
       menu.classList.toggle('is-active');
@@ -170,8 +172,14 @@
       menu.classList.remove('is-active');
     }
 
+    function showMenu() {
+      menu.classList.add('is-active');
+    }
+
     menu.addEventListener('click', hideMenu);
     menuBtn.addEventListener('click', toggleMenu);
+    hammer.on('swipeleft', hideMenu);
+    hammer.on('swiperight', showMenu);
 
   </script>
 </body>
