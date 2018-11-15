@@ -32,7 +32,7 @@
         <strong>JavaScript</strong> Developer and<br/>
         <strong>Frontend</strong> Engineer.
       </h1>
-      <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="Cover Image" />
+      <img class="hero-image" src="images/hero.png" width="500" height="300" alt="Cover Image" />
     </div>
   </section>
 
@@ -184,11 +184,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
   <script>
-    var $body = document.body;
-    var menu = document.querySelector('.menu');
-    var menuBtn = document.querySelector('.burguer-button');
-    var hammer = new Hammer($body);
-    var blazy = new Blazy({
+    const $body = document.body;
+    const menu = document.querySelector('.menu');
+    const menuBtn = document.querySelector('.burguer-button');
+    const tablet = window.matchMedia('screen and (max-width: 767px)');
+    const hammer = new Hammer($body);
+    const blazy = new Blazy({
       selector: 'img',
     });
 
@@ -204,10 +205,21 @@
       menu.classList.add('is-active');
     }
 
-    menu.addEventListener('click', hideMenu);
-    menuBtn.addEventListener('click', toggleMenu);
-    hammer.on('swipeleft', hideMenu);
-    hammer.on('swiperight', showMenu);
+    function validation(event) {
+      if (event.matches) {
+        menuBtn.addEventListener('click', toggleMenu);
+        menu.addEventListener('click', hideMenu);
+        hammer.on('swipeleft', hideMenu);
+        hammer.on('swiperight', showMenu);
+      } else {
+        menuBtn.removeEventListener('click', toggleMenu);
+        menu.removeEventListener('click', hideMenu);
+        hammer.off('swipeleft', hideMenu);
+        hammer.off('swiperight', showMenu);
+      }
+    }
+
+    tablet.addListener(validation);
   </script>
 </body>
 </html>
