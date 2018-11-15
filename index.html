@@ -51,7 +51,11 @@
           </p>
         </div>
         <figure class="project-imageContainer">
-          <img class="project-image" src="images/project-react.png" alt="React and Redux project">
+          <img 
+            class="project-image" 
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-src="images/project-react.png" 
+            alt="React and Redux project">
         </figure>
       </article>
       <article class="project">
@@ -66,7 +70,11 @@
           </p>
         </div>
         <figure class="project-imageContainer">
-          <img class="project-image" src="images/project-react.png" alt="React and Redux project">
+          <img 
+            class="project-image" 
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+            data-src="images/project-react.png" 
+            alt="React and Redux project">
         </figure>
       </article>
     </div>
@@ -79,7 +87,7 @@
         <article class="event">
           <figure class="event-imageContainer">
             <div class="flexible-video">
-                <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/PO5igRZtlEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/PO5igRZtlEU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </figure>
           <div class="event-detail">
@@ -92,7 +100,12 @@
         </article>
         <article class="event">
           <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.png" width="500" alt="">
+            <img 
+              class="event-image" 
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-src="images/platzi-conf.png"
+              width="500" 
+              alt="PlatziConf Spain 2016">
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf Spain 2016</h3>
@@ -104,7 +117,12 @@
         </article>
         <article class="event">
           <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.png" width="500" alt="">
+            <img 
+              class="event-image" 
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-src="images/platzi-conf.png"
+              width="500" 
+              alt="PlatziConf Spain 2016">
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf Spain 2016</h3>
@@ -116,7 +134,12 @@
         </article>
         <article class="event">
           <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.png" width="500" alt="">
+            <img 
+              class="event-image" 
+              src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+              data-src="images/platzi-conf.png"
+              width="500" 
+              alt="PlatziConf Spain 2016">
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf Spain 2016</h3>
@@ -157,12 +180,17 @@
       <div>With ❤︎ from Madrid, Spain</div>
     </div>
   </footer>
-  <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
   <script>
     var $body = document.body;
     var menu = document.querySelector('.menu');
     var menuBtn = document.querySelector('.burguer-button');
     var hammer = new Hammer($body);
+    var blazy = new Blazy({
+      selector: 'img',
+    });
 
     function toggleMenu() {
       menu.classList.toggle('is-active');
@@ -180,7 +208,6 @@
     menuBtn.addEventListener('click', toggleMenu);
     hammer.on('swipeleft', hideMenu);
     hammer.on('swiperight', showMenu);
-
   </script>
 </body>
 </html>

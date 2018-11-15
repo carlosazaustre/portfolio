@@ -107,7 +107,7 @@ figure {
   width: 100%;
   height: 0;
   padding-top: 56.25%;
-  background: blue;
+  background: #666;
   position: relative;
 }
 
@@ -134,6 +134,18 @@ figure {
   bottom: 10px;
   right: 10px;
   color: white;
+}
+
+.b-lazy {
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  max-width: 100%;
+  opacity: 0;
+}
+.b-lazy.b-loaded {
+  opacity: 1;
 }
 
 /* Header section */
